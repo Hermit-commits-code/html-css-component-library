@@ -146,6 +146,31 @@
   }
 }
 
+/* Forms */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  label {
+    font-weight: 800;
+  }
+  input,
+  textarea {
+    border: 1px solid var(--border);
+    border-radius: calc(var(--radius) * 0.75);
+    background: var(--surface);
+    padding: 0.9rem 1rem;
+    color: var(--text);
+    &::placeholder {
+      color: var(--muted);
+    }
+    &:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .card-grid {
     grid-template-columns: 1fr;

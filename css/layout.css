@@ -45,3 +45,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+
+/* Forms */
+.demo-form {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
