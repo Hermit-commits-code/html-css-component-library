@@ -1,0 +1,40 @@
+.site-logo {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav {
+  a {
+    color: var(--muted);
+    text-decoration: none;
+    &:hover,
+    :focus-visible {
+      color: var(--accent);
+    }
+  }
+}
+
+.hero {
+  .eyebrow {
+    margin-bottom: 1rem;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  h1 {
+    max-width: 800px;
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.05;
+    margin-bottom: 1rem;
+  }
+  p {
+    &:last-child {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+  }
+}
