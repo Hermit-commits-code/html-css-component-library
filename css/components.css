@@ -171,8 +171,46 @@
   }
 }
 
+/* Sections */
+
+.demo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 1rem;
+  .demo-logo {
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .demo-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    a {
+      color: var(--muted);
+      text-decoration: none;
+      &:hover,
+      :focus-visible {
+        color: var(--accent);
+      }
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .card-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .demo-nav {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
