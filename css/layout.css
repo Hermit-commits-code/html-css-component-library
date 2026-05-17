@@ -23,3 +23,18 @@
 .hero {
   padding-block: 6rem;
 }
+
+/* Buttons Section */
+.component-section {
+  padding-block: 5rem;
+  border-top: 1px solid var(--border);
+  .section-header {
+    max-width: 720px;
+    margin-bottom: 2rem;
+  }
+  .component-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

@@ -38,3 +38,65 @@
     }
   }
 }
+
+/* Buttons */
+.section-header {
+  h2 {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    margin-bottom: 1rem;
+  }
+  p {
+    &:last-child {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+
+  border-radius: 19px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease,
+    color 160ms ease;
+  &:hover,
+  :focus-visible {
+    transform: translateY(-2px);
+  }
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #020617;
+}
+
+.btn-secondary {
+  border: 1px solid var(--border);
+  color: var(--text);
+  &:hover,
+  :focus-visible {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+.btn-ghost {
+  color: var(--muted);
+  &:hover,
+  :focus-visible {
+    color: var(--accent);
+  }
+}
