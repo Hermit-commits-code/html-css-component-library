@@ -53,3 +53,17 @@
   flex-direction: column;
   gap: 1.5rem;
 }
+
+/* Sections */
+.demo-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+}
+
+/* Pricing */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1rem;
+}

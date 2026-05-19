@@ -171,7 +171,7 @@
   }
 }
 
-/* Sections */
+/* Navbars */
 
 .demo-nav {
   display: flex;
@@ -202,8 +202,108 @@
   }
 }
 
+/* Hero Sections */
+.demo-hero-content h3 {
+  max-width: 720px;
+
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+
+  margin-bottom: 1rem;
+}
+
+.demo-hero-content p:not(.eyebrow) {
+  max-width: 640px;
+
+  color: var(--muted);
+
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.demo-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.demo-hero-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  background: var(--surface);
+
+  padding: 1.5rem;
+  h4 {
+    margin-bottom: 1rem;
+  }
+  p {
+    &:last-child {
+      color: var(--muted);
+    }
+  }
+}
+
+/* Pricing Section */
+.pricing-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  background: var(--surface);
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.pricing-tier {
+  color: var(--accent);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  margin-bottom: 1rem;
+}
+
+.pricing-description {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.pricing-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  li {
+    color: var(--muted);
+  }
+}
+
 @media (max-width: 900px) {
   .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .pricing-grid {
     grid-template-columns: 1fr;
   }
 }
