@@ -430,6 +430,48 @@
   color: var(--accent);
 }
 
+/* CTA */
+.cta-demo {
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) * 1.25);
+
+  background: var(--surface);
+
+  padding: clamp(2rem, 5vw, 4rem);
+
+  text-align: center;
+}
+
+.cta-demo h3 {
+  max-width: 760px;
+
+  margin-inline: auto;
+  margin-bottom: 1rem;
+
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.cta-demo p:not(.eyebrow) {
+  max-width: 640px;
+
+  margin-inline: auto;
+  margin-bottom: 2rem;
+
+  color: var(--muted);
+
+  font-size: 1.05rem;
+}
+
+.cta-demo-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+}
+
 @media (max-width: 900px) {
   .card-grid {
     grid-template-columns: 1fr;
@@ -456,5 +498,12 @@
   .demo-nav {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .cta-demo-actions {
+    flex-direction: column;
+  }
+
+  .cta-demo-actions .btn {
+    width: 100%;
   }
 }
