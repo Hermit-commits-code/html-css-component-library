@@ -508,6 +508,52 @@
   font-size: 1rem;
 }
 
+/* FAQ Layouts */
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  background: var(--surface);
+
+  padding: 1.5rem;
+
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+}
+
+.faq-question h3 {
+  font-size: 1.1rem;
+}
+
+.faq-question span {
+  color: var(--accent);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.faq-item p {
+  color: var(--muted);
+
+  line-height: 1.7;
+}
+
 @media (max-width: 900px) {
   .card-grid {
     grid-template-columns: 1fr;
