@@ -403,6 +403,33 @@
   color: var(--muted);
 }
 
+/* Footer */
+.footer-brand p {
+  max-width: 320px;
+  color: var(--muted);
+  margin-top: 1rem;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links h3 {
+  font-size: 1rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--accent);
+}
+
 @media (max-width: 900px) {
   .card-grid {
     grid-template-columns: 1fr;
@@ -414,6 +441,13 @@
     grid-template-columns: 1fr;
   }
   .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+  .demo-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
     grid-template-columns: 1fr;
   }
 }

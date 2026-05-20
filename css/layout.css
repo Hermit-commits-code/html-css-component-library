@@ -83,3 +83,22 @@
 
   gap: 1rem;
 }
+
+/* Footer */
+.demo-footer {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 2rem;
+
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+
+  padding: 2rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
