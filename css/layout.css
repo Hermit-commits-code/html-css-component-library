@@ -102,3 +102,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+
+/* Stats & Metrics */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 1rem;
+}
